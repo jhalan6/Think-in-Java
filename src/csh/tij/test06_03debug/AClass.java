@@ -1,6 +1,11 @@
 package csh.tij.test06_03debug;
 
 public class AClass {
+	int i;
+	public AClass() {
+		// TODO Auto-generated constructor stub
+		System.out.println("AClass constructor");
+	}
 	public void Debug(String s){
 		System.out.println(s);
 	}
@@ -18,4 +23,8 @@ public class AClass {
 	protected String s2="Protected";
 	@SuppressWarnings("unused")
 	private String s3="private";
+	public void seti(int i){
+		this.i=i;
+		System.out.println("i has been set at"+i);
+	}
 }
