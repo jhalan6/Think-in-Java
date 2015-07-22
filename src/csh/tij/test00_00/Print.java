@@ -1,7 +1,7 @@
 package csh.tij.test00_00;
 
 import java.io.PrintStream;
-
+//A simple way to use print method
 public class Print {
 	public static void print(Object obj) {
 		System.out.println(obj);
