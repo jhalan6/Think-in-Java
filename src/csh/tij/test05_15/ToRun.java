@@ -12,7 +12,6 @@ class AClass{
 		System.out.println("s初始化");
 	}
 	public AClass() {
-		// TODO Auto-generated constructor stub
 		System.out.println("AClass");
 	}
 }

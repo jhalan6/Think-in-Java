@@ -3,7 +3,6 @@ package csh.tij.test06_03debug;
 public class AClass {
 	int i;
 	public AClass() {
-		// TODO Auto-generated constructor stub
 		System.out.println("AClass constructor");
 	}
 	public void Debug(String s){

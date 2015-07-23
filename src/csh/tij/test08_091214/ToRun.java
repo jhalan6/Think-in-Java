@@ -20,6 +20,7 @@ class Shared{
 	final private long id=countor++;
 	private int refcount=0;
 	void addRef(){
+		System.out.println("The shared used");
 		refcount++;
 	}
 	public void dispose() {
@@ -32,25 +33,28 @@ class Shared{
 	public String toString() {
 		return "Shared"+id;
 	}
+	Shared(){
+		System.out.println("A new Shared");
+	}
 }
-class Rodent{
+abstract class Rodent{
 	protected Shared shared;
-	public Rodent(Shared shared){
-		System.out.println("Rodent initialed");
+	public Rodent(Shared shared)
+	{
+//		System.out.println("Rodent initialed");
 		this.shared=shared;
 		this.shared.addRef();
 	}
-	public Rodent birth(){
-		return new Rodent(shared);
-	}
+	abstract public Rodent birth();
 	@Override
 	public String toString() {
 		return "Rodent";
 	}
-	public void dispose(){
-		System.out.println("Disposing "+this);
-		this.shared.dispose();
-	}
+	abstract public void dispose();
+//	{
+//		System.out.println("Disposing "+this);
+//		this.shared.dispose();
+//	}
 }
 class Mouse extends Rodent{
 	
@@ -62,9 +66,14 @@ class Mouse extends Rodent{
 	public Rodent birth() {
 		return new Mouse(this.shared);
 	}
-	@Override
-	public String toString() {
+	public String fortoString() {
 		return "Mouse"; 
+	}
+	@Override
+	public void dispose() {
+		// TODO Auto-generated method stub
+		System.out.println("Disposing"+this);
+		this.shared.dispose();
 	}
 }
 class Gerbil extends Rodent{
@@ -80,6 +89,11 @@ class Gerbil extends Rodent{
 	public String toString() {
 		return "Gerbil";
 	}
+	@Override
+	public void dispose() {
+		System.out.println("Disposing"+this);
+		this.shared.dispose();
+	}
 }
 class Hamster extends Rodent{
 	public Hamster(Shared shared) {
@@ -93,5 +107,9 @@ class Hamster extends Rodent{
 	@Override
 	public String toString() {
 		return "Hamster";
+	}
+	public void dispose() {
+		System.out.println("Disposing"+this);
+		this.shared.dispose();
 	}
 }

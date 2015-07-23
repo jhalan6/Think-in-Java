@@ -15,7 +15,6 @@ public class ToRun {
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		if(aClass==null){
 			aClass=new AClass("惰性初始化");
 		}

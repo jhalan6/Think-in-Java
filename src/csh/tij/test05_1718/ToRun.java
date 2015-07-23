@@ -9,7 +9,6 @@ public class ToRun{
 }
 class AClass{
 	public AClass(String s) {
-		// TODO Auto-generated constructor stub
 		System.out.println("created");
 		System.out.println(s);
 	}

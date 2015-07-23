@@ -7,7 +7,6 @@ public class ToRun{
 }
 class AClass{
 	public AClass() {
-		// TODO Auto-generated constructor stub
 		System.out.println("A AClass has been created!");
 	}
 	AClass(String s){

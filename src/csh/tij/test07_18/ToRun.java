@@ -10,7 +10,6 @@ public class ToRun {
 	}
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 				ToRun toRun=new ToRun();
 				System.out.println(toRun.i1);
 				System.out.println(toRun.i2);

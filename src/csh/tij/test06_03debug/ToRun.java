@@ -3,7 +3,6 @@ package csh.tij.test06_03debug;
 public class ToRun {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		AClass AC=new AClass();
 		System.out.println(AC.s1);
 		System.out.println(AC.s2);

@@ -13,7 +13,6 @@ public class Stem extends Root {
 	}
 	@Override
 	public void Dispose() {
-		// TODO Auto-generated method stub
 		cc1.Dispose();
 		cc2.Dispose();
 		cc3.Dispose();
@@ -21,7 +20,6 @@ public class Stem extends Root {
 		super.Dispose();
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Stem stem=new Stem();
 		try{
 			
@@ -36,7 +34,6 @@ class Root{
 	Component2 c2;
 	Component3 c3;
 	public Root() {
-		// TODO Auto-generated constructor stub
 		System.out.println("Root constructor");
 		c1=new Component1();
 		c2=new Component2();

@@ -20,7 +20,6 @@ public class Amphibian {
 class Frog extends Amphibian{
 	@Override
 	protected void func1() {
-		// TODO Auto-generated method stub
 		System.out.println("func1 from Frog");
 		super.func1();
 	}

@@ -6,7 +6,6 @@ public class ToRun extends AClass{
 	System.out.println("我就试试");
 }
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		new ToRun().func();
 	}
 }

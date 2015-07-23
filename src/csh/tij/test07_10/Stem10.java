@@ -13,17 +13,14 @@ public class Stem10 extends Root {
 		cc3=new Component3(string+" Root construct cc3");
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		new Stem10(" haha ");
 	}
-
 }
 class Root{
 	Component1 c1;
 	Component2 c2;
 	Component3 c3;
 	public Root(String string) {
-		// TODO Auto-generated constructor stub
 		System.out.println(string+" Root constructor");
 		c1=new Component1(string+" Root construct c1");
 		c2=new Component2(string+" Root construct c2");

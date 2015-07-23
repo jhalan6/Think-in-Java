@@ -11,7 +11,6 @@ public class Stem extends Root {
 		cc3=new Component3();
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		new Stem();
 	}
 
@@ -21,7 +20,6 @@ class Root{
 	Component2 c2;
 	Component3 c3;
 	public Root() {
-		// TODO Auto-generated constructor stub
 		System.out.println("Root constructor");
 		c1=new Component1();
 		c2=new Component2();

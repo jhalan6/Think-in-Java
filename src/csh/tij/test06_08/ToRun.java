@@ -3,7 +3,6 @@ package csh.tij.test06_08;
 public class ToRun {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ConnectionManager.addConnections();
 		ConnectionManager.checkConnections();
 		ConnectionManager.delConnections();
@@ -16,7 +15,6 @@ public class ToRun {
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		super.toString();
 		return"不会变的toString";
 	}

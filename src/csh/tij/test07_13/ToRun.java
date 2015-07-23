@@ -2,7 +2,6 @@ package csh.tij.test07_13;
 
 public class ToRun extends AClass{
 	public void func(double f) {
-		// TODO Auto-generated method stub
 		System.out.println("double");
 	}
 	public static void main(String[] args) {

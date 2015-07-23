@@ -11,7 +11,6 @@ import csh.tij.test06_03debugoff.AClass;
 public class ToRun {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		new AClass().Debug2();
 //		new csh.tij.test06_03debug.AClass().Debug2();
 //		Exception in thread "main" java.lang.Error: Unresolved compilation problem: 

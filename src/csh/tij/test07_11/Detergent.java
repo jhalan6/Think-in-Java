@@ -18,11 +18,9 @@ public class Detergent {
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return cleanser.toString();
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Detergent detergent=new Detergent();
 		detergent.dilute();
 		System.out.println(detergent);

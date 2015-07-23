@@ -6,7 +6,6 @@ import csh.tij.test06_03debug.*;
 public class ToRun {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		@SuppressWarnings("unused")
 		AClass aClass=new AClass();
 //		aClass.Debug2();

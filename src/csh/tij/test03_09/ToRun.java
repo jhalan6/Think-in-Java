@@ -1,7 +1,6 @@
 package csh.tij.test03_09;
 public class ToRun{
 	public ToRun(float f) {
-		// TODO Auto-generated constructor stub
 		System.out.println(f);
 	}
 	public ToRun(double d){

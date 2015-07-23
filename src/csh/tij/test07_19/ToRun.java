@@ -25,7 +25,6 @@ class AClass{
 	@SuppressWarnings("unused")
 	private int i;
 	public AClass(int i) {
-		// TODO Auto-generated constructor stub
 		this.i=i;
 		System.out.println("A AClass type has been initialed as "+i);
 	}

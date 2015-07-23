@@ -8,7 +8,6 @@ public class ToRun{
 class AClass{
 	String S1,S2="hello";
 	public AClass() {
-		// TODO Auto-generated constructor stub
 		S1="world";
 	}
 }
