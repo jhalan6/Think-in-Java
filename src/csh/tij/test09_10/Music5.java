@@ -29,6 +29,9 @@ abstract class Instrument implements Playable{
 	public void play(Node node) {
 		System.out.println(this+".play "+node);		
 	}
+//	public String name() {
+//		return getClass().getSimpleName();
+//	}
 }
 class Wind extends Instrument{
 	@Override
