@@ -45,6 +45,9 @@ class Root{
 		c3.Dispose();
 		System.out.println("Root disposed");
 	}
+	protected void name() {
+		System.err.println("sth.");
+	}
 }
 class Component1{
 	Component1(){
