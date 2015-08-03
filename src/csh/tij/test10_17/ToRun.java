@@ -3,12 +3,12 @@ package csh.tij.test10_17;
 import java.util.Random;
 
 public class ToRun {
-	public static String dropSomething(SomethingToDropFactory Factory){
-		return Factory.getSomething().drop();
+	public static void dropSomething(SomethingToDropFactory Factory){
+		System.out.println(Factory.getSomething().drop());
 	}
 	public static void main(String[] args) {
-		System.out.println(dropSomething(coin.factory));
-		System.out.println(dropSomething(dice.factory));
+		dropSomething(coin.factory);
+		dropSomething(dice.factory);
 	}
 }
 abstract class SomethingToDrop{
