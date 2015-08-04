@@ -14,7 +14,8 @@ public abstract class Event {
 		return System.nanoTime()>=eventTime;
 	}
 	abstract public void action();
-	static class test{
+	@SuppressWarnings("unused")
+	private static class test{
 		public static void main(String[] args) {
 			Event event=new Event(300000) {
 				@Override
